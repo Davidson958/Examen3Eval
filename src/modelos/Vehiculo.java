@@ -1,6 +1,6 @@
 package modelos;
 
-import utilidades.Constantes;
+import util.Constantes;
 
 public class Vehiculo {
     private final String matricula;
