@@ -4,10 +4,10 @@ public class Empleado extends Persona {
     private final String usuario;
     private final String contrasena;
 
-    public Empleado(String dni, String nombre, String usuario) {
+    public Empleado(String dni, String nombre, String usuario, String contrasena) {
         super(dni, nombre);
         this.usuario = usuario;
-        this.contrasena = "1234";
+        this.contrasena = String.valueOf(1234);
     }
 
     public String getUsuario() {
@@ -23,3 +23,6 @@ public class Empleado extends Persona {
         return super.toString() + ", usuario: " + usuario;
     }
 }
+
+
+
