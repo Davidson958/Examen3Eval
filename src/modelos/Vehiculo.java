@@ -1,10 +1,11 @@
 package modelos;
 
 import util.Constantes;
+import util.Marcas;
 
 public class Vehiculo {
     private final String matricula;
-    private final String marca;
+    private final Marcas marca;
     private final String modelo;
     private String color;
     private final double precioPorDia;
@@ -12,7 +13,7 @@ public class Vehiculo {
     private Cliente cliente;
     private int diasAlquiler;
 
-    public Vehiculo(String matricula, String marca, String modelo, String color, double precioPorDia) {
+    public Vehiculo(String matricula, Marcas marca, String modelo, String color, double precioPorDia) {
         this.matricula = matricula;
         this.marca = marca;
         this.modelo = modelo;
@@ -21,11 +22,12 @@ public class Vehiculo {
         this.alquilado = false;
     }
 
+
     public String getMatricula() {
         return matricula;
     }
 
-    public String getMarca() {
+    public Marcas getMarca() {
         return marca;
     }
 

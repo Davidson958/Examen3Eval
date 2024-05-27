@@ -4,7 +4,7 @@ import modelos.Cliente;
 import modelos.Empleado;
 import modelos.Persona;
 import modelos.Vehiculo;
-import services.ClienteService;
+import util.Marcas;
 import services.EmpleadoService;
 import services.PersonaService;
 import services.VehiculoService;
@@ -148,8 +148,8 @@ public class Renting {
     }
 
     private static void cargarDatosIniciales() {
-        servicioVehiculos.addVehiculo(new Vehiculo("1234ABC", "Toyota", "Corolla", "Blanco", 30.0));
-        servicioVehiculos.addVehiculo(new Vehiculo("5678DEF", "Honda", "Civic", "Negro", 35.0));
+        servicioVehiculos.addVehiculo(new Vehiculo("1234ABC", Marcas.Seat, "Corolla", "Blanco", 30.0));
+        servicioVehiculos.addVehiculo(new Vehiculo("5678DEF", Marcas.Seat, "Civic", "Negro", 35.0));
 
         servicioPersonas.addPersona(new Cliente("12345678A", "Juan Pérez", "Madrid"));
         servicioPersonas.addPersona(new Empleado("87654321B", "Ana García", "agarcia", "1234"));
